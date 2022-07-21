@@ -1,0 +1,391 @@
+/* Google fonts poppins font family link  */
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Root color */
+:root {
+    --background-color: black;
+    --text-color: white;
+    --bton-color: red;
+    --social-icon: greenyellow;
+}
+
+/* Header design */
+
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border-radius: 19px;
+    margin-left: 69px;
+    margin-right: 69px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.half-width h1 {
+    font-size: 70px;
+    font-weight: 700;
+
+}
+
+.half-width p {
+    font-size: 16px;
+    font-weight: 400px;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.half-width button {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text-color);
+    background-color: var(--bton-color);
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.icon-style {
+    margin-left: 9px;
+}
+
+.header-image img {
+    width: 100%;
+}
+
+/* Tablet Responsive */
+
+@media screen and (max-width:780px) {
+
+    .header-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .half-width {
+        width: 400px;
+        padding: 20px;
+    }
+
+    .half-width h1 {
+        font-size: 30px;
+
+    }
+
+    .half-width p {
+        width: 300px;
+    }
+
+    .half-width button {
+
+        margin-bottom: 0px;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width:480px) {
+    .header-container {
+
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+
+    }
+
+    .half-width {
+        width: 350px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .half-width h1 {
+        font-size: 30px;
+
+    }
+
+    .half-width p {
+        width: 350px;
+    }
+
+    .half-width button {
+
+        margin-bottom: 0px;
+    }
+
+    .header-image {
+        text-align: center;
+    }
+
+    .header-image img {
+        width: 70%;
+    }
+}
+
+
+/* Blog Section Design */
+.blog-container {
+    margin: 32px;
+    display: flex;
+
+}
+
+
+
+
+.button-style {
+
+    background-color: var(--background-color);
+    width: 290px;
+    height: 220px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+
+
+}
+
+.button-design {
+    margin-bottom: 15px;
+
+}
+
+.button-design button {
+    width: 252px;
+    height: 64px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 10px;
+
+}
+
+.button-design2 button {
+    background-color: var(--bton-color);
+}
+
+
+.griding {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+
+}
+
+.blog_card {
+    height: 260px;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.blog {
+    margin: 25px;
+}
+
+
+.blog_card1 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    align-items: center;
+    margin: 20px;
+}
+
+.blog_card2 {
+    margin: 30px;
+    align-items: center;
+}
+
+.blog_card2 h5 {
+    margin-left: 20px;
+}
+
+
+.tab-button {
+    display: none;
+    background-color: var(--bton-color);
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 4px 25px;
+    border-radius: 5px;
+}
+
+
+/* Tablet view */
+@media screen and (max-width:780px) {
+
+    .button-style {
+        display: flex;
+        gap: 3px;
+        margin-top: -10px;
+        margin-bottom: 35px;
+        margin-left: -65px;
+        margin-right: -5px;
+        padding: 15px 25px;
+        background-color: var(--text-color);
+    }
+
+    .griding {
+        margin-top: 100px;
+        margin-left: -310px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tab-button {
+        display: flex;
+        margin-left: 320px;
+        margin-bottom: -500px;
+    }
+
+
+
+}
+
+/* Mobile View */
+@media screen and (max-width:480px) {
+
+    .button-style {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        margin-left: .5px;
+
+    }
+
+    .griding {
+        margin-top: 300px;
+        margin-left: -320px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tab-button {
+        display: none;
+    }
+}
+
+
+
+
+/* Footer Part Design */
+.footer1 {
+    margin-top: 100px;
+    padding-bottom: 30px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.footer1 h1 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.footer1 hr {
+    color: var(--text-color);
+    margin: 30px;
+
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    /* grid-template-columns: repeat(6, 1fr); */
+    /* column-gap: 1px; */
+    text-align: center;
+    margin-left: 190px;
+    margin-right: 190px;
+    margin-bottom: 40px;
+
+
+}
+
+.bottom button {
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 19px;
+    border: none;
+
+}
+
+
+
+.social_icon {
+
+    margin-top: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.social_icon .fa {
+    color: var(--social-icon);
+    margin: 5px;
+    font-size: 30px;
+}
+
+/* Tablet Responsive */
+@media screen and (max-width:780px) {
+    .footer1 {
+        margin-top: 580px;
+    }
+
+    .bottom {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 4px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .bottom button {
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        align-items: center;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width:480px) {
+
+    .footer1 {
+        margin-top: 30px;
+    }
+
+    .bottom {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 3px;
+        text-decoration: none;
+
+    }
+
+    .bottom button {
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+
+}
